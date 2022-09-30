@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock %}
+
+{% block content %}
+<div class="mb-3 " >
+<form action="" method="post" class="row g-3 needs-validation  d-flex justify-content-center novalidate">
+    <div class="row mb-3">
+<label class="col-sm-2 col-form-label" for="firstname" name="firstName">first Name</label>
+<input  class="col-sm-6" type="text" name="firstname" placeholder="First Name" required>
+</div>
+<div class="row mb-3">
+<label  class="col-sm-2 col-form-label" for="lastname" name="lastName"> Last Name</label>
+<input class="col-sm-6" type="text" name="lastname" placeholder="last Name" required>
+</div>
+<div class="row mb-3">
+<label class="col-sm-2 col-form-label" for="email" name="email"> Email</label>
+<input class="col-sm-6" type="email" name="email" placeholder="Email" required>
+</div>
+<div class="row mb-3">
+<label class="col-sm-2 col-form-label" for="jobtitle" name="jobtitle"> Job Title</label>
+<input class="col-sm-6" type="text" name="jobtitle" placeholder="Job Title" required>
+</div>
+
+
+<input class="btn btn-primary col-6 mx-auto"   type="submit" name="submit">
+</form>
+</div>
+
+
+
+
+
+
+{% endblock %}

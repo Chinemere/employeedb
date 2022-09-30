@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% block title %} Update {% endblock %}
+
+{% block content %}
+<div class="mb-3 " >
+<form action="" method="post" class="row g-3 needs-validation  d-flex justify-content-center novalidate">
+    <div class="row mb-3">
+<label for="firstname" name="firstName" class="col-sm-2 col-form-label" >first Name</label>
+<input class="col-sm-6" type="text" type="text" name="firstname" placeholder="First Name" value="{{empId.firstName}}">
+</div>
+<div class="row mb-3">
+<label for="lastname" name="lastName" class="col-sm-2 col-form-label" > Last Name</label>
+<input class="col-sm-6" type="text" type="text" name="lastname" placeholder="last Name" value="{{empId.lastname}}">
+</div>
+<div class="row mb-3">
+<label for="email" name="email" class="col-sm-2 col-form-label" > Email</label>
+<input class="col-sm-6" type="text" type="email" name="email" placeholder="Email" value="{{empId.email}}">
+</div>
+<div class="row mb-3">
+<label for="jobtitle" name="jobtitle"  class="col-sm-2 col-form-label"> Job Title</label>
+<input class="col-sm-6" type="text" type="text" name="jobtitle" placeholder="Job Title" value="{{empId.jobTitle}}">
+</div>
+
+
+<input class="btn btn-primary col-6 mx-auto" id="liveAlertBtn" type="submit" name="submit" value="Update">
+</form>
+</div>
+
+
+
+
+<!-- <script>
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    
+    const alert = (message, type) => {
+      const wrapper = document.createElement('div')
+      wrapper.innerHTML = [
+        `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+        `   <div>${message}</div>`,
+        '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+        '</div>'
+      ].join('')
+    
+      alertPlaceholder.append(wrapper)
+    }
+    
+    const alertTrigger = document.getElementById('liveAlertBtn')
+    if (alertTrigger) {
+      alertTrigger.addEventListener('click', () => {
+        alert('Nice, you triggered this alert message!', 'success')
+      })
+    }
+    </script>   -->
+
+{% endblock %}
+
+
